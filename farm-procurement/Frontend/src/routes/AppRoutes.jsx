@@ -5,9 +5,15 @@ import { ROLES } from "../utils/roles";
 import Login from "../pages/auth/Login";
 import Register from "../pages/auth/Register";
 
+<<<<<<< HEAD
 import FarmerDashboard from "../pages/Farmer/FarmerDashboard";
 import SubmitProduce from "../pages/Farmer/SubmitProduce";
 import ProduceHistory from "../pages/Farmer/ProduceHistory";
+=======
+import FarmerDashboard from "../pages/farmer/FarmerDashboard";
+import SubmitProduce from "../pages/farmer/Submitproduce";
+import ProduceHistory from "../pages/farmer/ProduceHistory";
+>>>>>>> 9fc93fc775d3f99bd4cee8a477dec371a48afc32
 
 import InspectorDashboard from "../pages/inspector/InspectorDashboard";
 import GradingForm from "../pages/inspector/GradingForm";

@@ -20,11 +20,16 @@ public class InspectionService {
         this.produceRepository = produceRepository;
         this.qualityGradeService = qualityGradeService;
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9fc93fc775d3f99bd4cee8a477dec371a48afc32
     public Inspection inspect(Long produceId, int score) {
 
         Produce produce = produceRepository.findById(produceId)
                 .orElseThrow(() -> new RuntimeException("Produce NOT FOUND"));
 
+<<<<<<< HEAD
        
         if (score >= 80) {
             produce.setStatus("APPROVED");
@@ -36,6 +41,14 @@ public class InspectionService {
         inspection.setProduce(produce);
         inspection.setScore(score);
 
+=======
+        Inspection inspection = new Inspection();
+
+        inspection.setProduce(produce);
+        inspection.setScore(score);
+
+        // 🔥 AUTO GRADE ASSIGN
+>>>>>>> 9fc93fc775d3f99bd4cee8a477dec371a48afc32
         String grade = qualityGradeService.getGradeByScore(score);
         inspection.setGrade(grade);
 
